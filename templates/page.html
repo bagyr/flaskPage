@@ -1,9 +1,41 @@
 <!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kill me</title>
+        <style type="text/css">
+            body {
+                color: black;
+            }
+            h1.quote {
+                font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+                font-weight: normal;
+                font-size: 1.75em;
+                letter-spacing: .2em;
+                line-height: 1.1em;
+                margin:0px;
+                text-align: center;
+                text-transform: uppercase;
+            }
 
-<title>Hello</title>
+            h1.quote:first-letter {
+                font-size: 200%;
+            }
 
-{% if name %}
-    <h1>{{ name }}</h1>
-{% else %}
-    <h1>Kill me</h1>
-{% endif %}
+            span {
+                line-height:3em; 
+                font-size:3em; 
+                font-weight:bold; 
+                color:#808080;
+            }
+        </style>
+    </head>
+    <body>
+    {% if name %}
+        <h1 class="quote">{{ name }}</h1>
+    {% else %}
+        <h1 class="quote">Kill me</h1>
+    {% endif %}
+    </body>
+</html>
+
