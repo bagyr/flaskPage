@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def hello_world(name = 'Kill Me.'):
-    name = generator.makeText(20)
+    name = generator.makeSequence(20)
     return render_template('page.html', name=name)
 
 if __name__ == '__main__':
